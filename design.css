@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),url(background3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    
+.logo {
+    width: 300px; cursor: pointer;
+    }
+.navbar ul li{
+        list-style: none; 
+        display: inline-block; 
+        margin: 0 20px;
+        position: relative; 
+    }
+.navbar ul li a{
+    color: #fff;
+    text-decoration: none; text-transform: uppercase;}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 50px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 5px;
+}
+/*-----------BEDROOMS------------*/
+
+.bedrooms{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(bedrooms.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.beds{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+}
+
+.card{
+    color: rgb(241, 141, 11);
+    text-align: center;
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 20px;
+    padding: 20px 20px;
+    cursor: pointer;
+    margin: 20px 15px;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    flex-direction: row;
+    transition: 1s;
+}
+.card1{
+    background-image: url(bed.jpg);
+}
+.card2{
+    background-image: url(bed1.jpg);
+}
+.card3{
+    background-image: url(bed2.jpg);
+}
+.card:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+/*------Dinnind-----*/
+.Dinning{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), 
+    url(Dinningback.webp);
+    background-size: cover;
+    background-position: center;
+}
+.dinning{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+}
+.cards{
+    color: rgb(15, 13, 11);
+    text-align: center;
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 200px;
+    padding: 2px 20px;
+    cursor: pointer;
+    margin: 20px 15px;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    flex-direction: row;
+    transition: 1s;
+}
+.cards1{
+    background-image: url(simpledine.jpg);
+}
+.cards2{
+    background-image: url(modern.jpg);
+}
+.cards3{
+    background-image: url(luxurydine.jpg);
+}
+.cards:hover{
+    transform: translateY(-10px);
+}
+/*------kitchen------*/
+.Kitchen{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), 
+    url(kitchenback.webp);
+    background-size: cover;
+    background-position: center;
+}
+.kitchen{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+
+}
+.col{
+    padding-top: 30px;
+}
+.cols{
+    padding-top: 30px;
+}
+.colr{
+    padding-top: 30px;
+}
+.coll{
+    padding-top: 30px;
+}
+.cardr{
+    color: rgb(15, 13, 11);
+    text-align: center;
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 80px;
+    padding: 2px 20px;
+    cursor: pointer;
+    margin: 20px 15px;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    flex-direction: row;
+    transition: 1s;
+}
+.cardr1{
+    background-image: url(kitchensimple.jpg);
+}
+.cardr2{
+    background-image: url(modernkitchen.jpg);
+}
+.cardr3{
+    background-image: url(luxurykitchen.jpg);
+}
+.cardr:hover{
+    transform: translateY(-10px);
+}
+/*--------Livingroom-------*/
+.livingrooms{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), 
+    url(livingroomback.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.living{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+
+}
+.cardl{
+    color: rgb(15, 13, 11);
+    text-align: center;
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 80px;
+    padding: 2px 20px;
+    cursor: pointer;
+    margin: 20px 15px;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    flex-direction: row;
+    transition: 1s;
+}
+.cardl1{
+    background-image: url(livingsimple.jpg);
+}
+.cardl2{
+    background-image: url(livingmodern.webp);
+}
+.cardl3{
+    background-image: url(livingluxury.jpg);
+}
+.cardl:hover{
+    transform: translateY(-10px);
+}
+
